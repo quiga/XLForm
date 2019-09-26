@@ -60,6 +60,7 @@
     self.textLabel.textAlignment = !simpleAction ? NSTextAlignmentNatural : NSTextAlignmentCenter;
     self.accessoryType = simpleAction || isDisabled ? UITableViewCellAccessoryNone : UITableViewCellAccessoryDisclosureIndicator;
     self.editingAccessoryType = self.accessoryType;
+    self.accessibilityTraits = UIAccessibilityTraitButton;
     self.selectionStyle = isDisabled ? UITableViewCellSelectionStyleNone : UITableViewCellSelectionStyleDefault;
     
     if (simpleAction && _useTintColor){
